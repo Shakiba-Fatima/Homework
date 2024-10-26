@@ -1,11 +1,12 @@
 #include<stdio.h>
 #include<string.h>
-struct student {
+struct student {//'struct student'->data type of variables s1,s2,s3 each of which contains the following attributes of different data types.
 	int roll;
 	float cgpa;
 	char name[20];
 	};
 int main(){
+	//initialising the variables
     struct student s1={24,89.99,"shakiba"};
 	struct student s2={23,96.99,"shuba"};
 	struct student s3={42,98.99,"sai"};
@@ -17,6 +18,7 @@ int main(){
 	printf("\n");
 	printf("STUDENT 3\nName: %s\nRoll No: %d\nCGPA %.2f\n",s3.name,s3.roll,s3.cgpa);
     printf("Size of Student 3: %zu", sizeof(s3));
+	//%zu->format specifier for printing the result of sizeof()
 return 0;
 }
 
