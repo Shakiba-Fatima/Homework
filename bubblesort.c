@@ -26,6 +26,9 @@ int main(){
     return 0;
 }
 /*
+logic: create a temp variable make two loops one take i from 0 to n and other take j from 0 to n-1.
+then start checking if element at j position is greater than element at j+1 position if yes then :
+store value at j in temp , value at j+1 in j and value at temp in j+1
 Enter the number of elements you want to enter: 5
 Enter the elements: 9 4 5 3 6 2
 Elements in sorted order:
